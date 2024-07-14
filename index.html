@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Sharing Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <h1>Story Sharing Platform</h1>
+        <button id="adminButton">Admin Panel</button>
+    </nav>
+    <div class="container">
+        <div id="storyFormContainer">
+            <h2>Submit Your Story</h2>
+            <form id="storyForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+
+                <button type="submit">Submit Story</button>
+            </form>
+        </div>
+        <div id="stories">
+            <h2>Stories</h2>
+            <div id="storyList"></div>
+        </div>
+    </div>
+
+    <div id="adminPanel" class="hidden">
+        <h2>Admin Panel</h2>
+        <div id="adminStoryList"></div>
+        <button id="closeAdminPanel">Close Admin Panel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
